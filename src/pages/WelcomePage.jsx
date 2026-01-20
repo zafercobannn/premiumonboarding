@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+
 import { CheckIcon } from '../components/Icons'
 
 const FEATURES = [
@@ -26,7 +26,7 @@ function WelcomePage({ onNavigate, activeService, remainingDays }) {
 
     return (
         <div className="welcome-page fade-in">
-            <Header />
+
             <main className="container">
                 <div className="welcome-layout">
                     <div className="welcome-content">

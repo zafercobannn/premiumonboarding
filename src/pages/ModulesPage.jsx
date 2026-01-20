@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+
 import { ArrowLeftIcon, ShoppingCartIcon } from '../components/Icons'
 
 function ModulesPage({ services, cart, onToggleService, onNavigate, subtotal }) {
@@ -10,7 +10,7 @@ function ModulesPage({ services, cart, onToggleService, onNavigate, subtotal }) 
 
     return (
         <div className="modules-page fade-in">
-            <Header />
+
             <main className="container">
                 <button className="back-button" onClick={() => onNavigate('welcome')}>
                     <ArrowLeftIcon />

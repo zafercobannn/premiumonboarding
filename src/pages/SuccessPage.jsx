@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+
 import Confetti from '../components/Confetti'
 import { CheckCircleIcon } from '../components/Icons'
 
@@ -19,7 +19,7 @@ function SuccessPage({ cartServices, total, onNavigate, activeService, remaining
     return (
         <div className="success-page fade-in">
             <Confetti />
-            <Header />
+
             <main className="container">
                 <div className="success-icon">
                     <CheckCircleIcon />

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './components/Header'
 import WelcomePage from './pages/WelcomePage'
 import ModulesPage from './pages/ModulesPage'
 import PaymentPage from './pages/PaymentPage'
@@ -155,6 +156,7 @@ function App() {
 
   return (
     <div className="app">
+      <Header />
       {showProgressBar && <ProgressBar currentPage={currentPage} />}
 
       {currentPage === 'welcome' && (

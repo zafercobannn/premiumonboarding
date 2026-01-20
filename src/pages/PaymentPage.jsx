@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Header from '../components/Header'
+
 import { ArrowLeftIcon } from '../components/Icons'
 
 function PaymentPage({
@@ -146,7 +146,7 @@ function PaymentPage({
 
     return (
         <div className="payment-page fade-in">
-            <Header />
+
             <main className="container">
                 <button className="back-button" onClick={() => onNavigate('modules')}>
                     <ArrowLeftIcon />
@@ -265,7 +265,6 @@ function PaymentPage({
                             <button
                                 type="submit"
                                 className="btn btn-primary btn-lg btn-block"
-                                disabled={!isFormValid}
                             >
                                 Ödemeyi Tamamla
                             </button>
