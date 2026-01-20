@@ -16,7 +16,7 @@ export const SERVICES = [
     price: 3000,
     description: 'Uzman eğitmenle birebir panel kullanım eğitimi. ikas panelini A\'dan Z\'ye öğrenin.',
     IconComponent: GraduationIcon,
-    features: ['45 dakikalık canlı eğitim']
+    features: ['45 dakikalık online eğitim']
   },
   {
     id: 'google-meta',
