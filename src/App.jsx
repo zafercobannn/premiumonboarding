@@ -4,6 +4,7 @@ import WelcomePage from './pages/WelcomePage'
 import ModulesPage from './pages/ModulesPage'
 import PaymentPage from './pages/PaymentPage'
 import SuccessPage from './pages/SuccessPage'
+import ProgressBar from './components/ProgressBar'
 import { GraduationIcon, LinkIcon, PaletteIcon, PackageIcon } from './components/Icons'
 
 // Hizmet modülleri tanımları - minimal ikonlarla
@@ -149,8 +150,13 @@ function App() {
     return cart.map(id => SERVICES.find(s => s.id === id)).filter(Boolean)
   }
 
+  // Welcome sayfasında progress bar gösterme
+  const showProgressBar = currentPage !== 'welcome'
+
   return (
     <div className="app">
+      {showProgressBar && <ProgressBar currentPage={currentPage} />}
+
       {currentPage === 'welcome' && (
         <WelcomePage
           onNavigate={navigateTo}

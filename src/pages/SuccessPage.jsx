@@ -1,13 +1,24 @@
 import Header from '../components/Header'
+import Confetti from '../components/Confetti'
 import { CheckCircleIcon } from '../components/Icons'
 
-function SuccessPage({ cartServices, total, onNavigate }) {
+function SuccessPage({ cartServices, total, onNavigate, activeService, remainingDays }) {
     const formatPrice = (price) => {
         return new Intl.NumberFormat('tr-TR').format(Math.round(price))
     }
 
+    const formatDate = (dateString) => {
+        const date = new Date(dateString)
+        return date.toLocaleDateString('tr-TR', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+        })
+    }
+
     return (
         <div className="success-page fade-in">
+            <Confetti />
             <Header />
             <main className="container">
                 <div className="success-icon">
@@ -19,6 +30,17 @@ function SuccessPage({ cartServices, total, onNavigate }) {
                     Premium Onboarding hizmetiniz için ödemeniz başarıyla alındı.
                     Ekibimiz en kısa sürede sizinle iletişime geçecektir.
                 </p>
+
+                {activeService && (
+                    <div className="service-status-banner">
+                        <div className="service-status active">
+                            <h4 className="service-status-title">Hizmet aktif</h4>
+                            <p className="service-status-info">
+                                Bitiş: {formatDate(activeService.endDate)} • {remainingDays} gün kaldı
+                            </p>
+                        </div>
+                    </div>
+                )}
 
                 <div className="success-summary">
                     <h3 className="success-summary-title">Satın Aldığınız Hizmetler</h3>

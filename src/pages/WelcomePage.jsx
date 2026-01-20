@@ -72,9 +72,7 @@ function WelcomePage({ onNavigate, activeService, remainingDays }) {
                             </>
                         ) : (
                             <>
-                                <div className="summary-note">
-                                    2 ay sonunda tekrar satın alarak desteği uzatabilirsiniz.
-                                </div>
+
 
                                 <button
                                     className="btn btn-primary btn-lg btn-block"

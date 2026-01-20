@@ -1,16 +1,53 @@
-# React + Vite
+# ikas Premium Onboarding 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Bu proje yapay zeka asistanı Claude Code Opus ile tasarlanmış ve geliştirilmiştir.**
 
-Currently, two official plugins are available:
+ikas mağaza sahipleri için özel olarak hazırlanan **Premium Onboarding** paneli, kullanıcıların e-ticaret sitelerini 2 ay gibi kısa bir sürede uzman desteğiyle satışa hazır hale getirmelerini sağlayan modern bir web arayüzüdür.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![ikas Premium Onboarding](https://github.com/zafercobannn/premiumonboarding/assets/placeholder-image-url)
 
-## React Compiler
+## 🎨 Tasarım Felsefesi
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Bu projenin tasarımında **Premium & Minimalist** bir yaklaşım benimsenmiştir:
 
-## Expanding the ESLint configuration
+- **Renk Paleti**: Modern, güven veren ve kurumsal bir kimlik yansıtan **Derin Lacivert (#0C2C55)** ana renk olarak kullanılmıştır. Bu renk seçimi, premium hizmet algısını güçlendirirken göz yormayan bir deneyim sunar.
+- **Tipografi**: Okunabilirliği yüksek, modern sans-serif fontlar kullanılarak temiz bir hiyerarşi oluşturulmuştur.
+- **Beyaz Alan (Whitespace)**: Kullanıcının odağını içerikte tutmak ve ferah bir arayüz sunmak için cömert beyaz alanlar kullanılmıştır.
+- **Mikro Etkileşimler**: Butonlar, kartlar ve geçişlerde kullanılan yumuşak animasyonlar, kullanıcı deneyimini zenginleştirir.
+- **Progressive Disclosure**: Bilgi yoğunluğunu yönetmek için adım adım ilerleyen bir akış (Wizard yapısı) tasarlanmıştır.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Teknolojiler
+
+- **React + Vite**: Hızlı ve modern frontend geliştirme deneyimi.
+- **CSS3 Variables**: Esnek ve bakımı kolay tema yönetimi.
+- **Responsive Design**: Mobil ve masaüstü uyumlu akıcı arayüz.
+
+## ✨ Özellikler
+
+- **Adım Adım İlerleme (Progress Bar)**: Kullanıcının onboarding sürecindeki yerini net bir şekilde görmesini sağlar.
+- **Dinamik Sepet Yönetimi**: Hizmet ekleme/çıkarma ve anlık fiyat hesaplama.
+- **Kupon Sistemi**: Promosyon kodları ile indirim uygulama yeteneği.
+- **Konfeti Kutlaması 🎉**: Başarılı ödeme sonrası kullanıcıyı motive eden görsel ödüllendirme.
+
+## 🚀 Kurulum
+
+Projeyi yerel ortamınızda çalıştırmak için:
+
+1. Repoyu klonlayın:
+   ```bash
+   git clone https://github.com/zafercobannn/premiumonboarding.git
+   ```
+
+2. Bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+
+3. Geliştirme sunucusunu başlatın:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+*Bu proje, modern web teknolojileri ve yapay zeka destekli kodlama pratiklerinin birleşimiyle hayata geçirilmiştir.*
