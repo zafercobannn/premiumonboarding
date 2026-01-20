@@ -15,7 +15,7 @@ export const SERVICES = [
     price: 3000,
     description: 'Uzman eğitmenle birebir panel kullanım eğitimi. ikas panelini A\'dan Z\'ye öğrenin.',
     IconComponent: GraduationIcon,
-    features: ['1 saatlik canlı eğitim', 'Soru-cevap oturumu', 'Eğitim kaydı']
+    features: ['45 dakikalık canlı eğitim']
   },
   {
     id: 'google-meta',
@@ -23,7 +23,7 @@ export const SERVICES = [
     price: 3000,
     description: 'Google Analytics, Google Ads ve Meta Pixel entegrasyonlarının kurulumu.',
     IconComponent: LinkIcon,
-    features: ['Google Analytics 4', 'Meta Pixel kurulumu', 'Dönüşüm izleme']
+    features: ['Meta Pixel kurulumu', '30 dakikalık bir toplantı sırasında mevcut Google ve Meta hesaplarının gerekli bağlantıları yapılır.']
   },
   {
     id: 'tema-tasarim',
